@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0456fb90-c2f0-46be-9070-a8df621ba12e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelAPI.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelAPI.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,13 +40,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelAPI.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="125" column="69" selection-start-line="125" selection-start-column="69" selection-end-line="125" selection-end-column="69" />
+            <state relative-caret-position="659">
+              <caret line="183" column="2" selection-start-line="183" selection-start-column="2" selection-end-line="183" selection-end-column="2" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
-                <element signature="e#736#1338#0" />
                 <element signature="e#1588#2190#0" />
+                <element signature="e#2484#3109#0" />
+                <element signature="e#4389#4625#0" />
+                <element signature="e#4696#4706#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7-sources.jar!/akka/http/scaladsl/model/Uri.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="507" column="9" selection-start-line="507" selection-start-column="9" selection-end-line="507" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7-sources.jar!/akka/http/scaladsl/model/HttpMessage.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -115,6 +134,45 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="part2_lowlevel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="akka-http-core_2.12-10.1.7.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="akka-http-core_2.12-10.1.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="akka-http-core_2.12-10.1.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="scaladsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="sbt: com.typesafe.akka:akka-http-core_2.12:10.1.7:jar" type="70bed36:NamedLibraryElementNode" />
+              <item name="akka-http-core_2.12-10.1.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="scaladsl" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +341,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30640084" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10598111" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,14 +430,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7-sources.jar!/akka/http/scaladsl/model/HttpEntity.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="274" column="7" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7-sources.jar!/akka/http/scaladsl/model/HttpMessage.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7-sources.jar!/akka/http/scaladsl/model/Uri.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="507" column="9" selection-start-line="507" selection-start-column="9" selection-end-line="507" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelAPI.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="125" column="69" selection-start-line="125" selection-start-column="69" selection-end-line="125" selection-end-column="69" />
+        <state relative-caret-position="659">
+          <caret line="183" column="2" selection-start-line="183" selection-start-column="2" selection-end-line="183" selection-end-column="2" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
-            <element signature="e#736#1338#0" />
             <element signature="e#1588#2190#0" />
+            <element signature="e#2484#3109#0" />
+            <element signature="e#4389#4625#0" />
+            <element signature="e#4696#4706#0" />
           </folding>
         </state>
       </provider>

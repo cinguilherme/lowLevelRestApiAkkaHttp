@@ -3,9 +3,10 @@ package part2_lowlevel
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.Http.IncomingConnection
-import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpMethods, HttpRequest, HttpResponse, StatusCode, StatusCodes}
+import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpHeader, HttpMethods, HttpRequest, HttpResponse, StatusCode, StatusCodes, Uri}
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{Flow, Sink}
+import org.scalatest.path
 
 import scala.concurrent.Future
 
@@ -53,7 +54,7 @@ object LowLevelAPI extends App {
     connection.handleWithSyncHandler(requestHandler)
   })
 
-  serverSource.to(httpSinkConnectionHandler).run()
+//  serverSource.to(httpSinkConnectionHandler).run()
 
   import system.dispatcher
   val requestHandlerAsync: HttpRequest => Future[HttpResponse] = {
@@ -83,7 +84,7 @@ object LowLevelAPI extends App {
     }
   }
 
-  Http().bindAndHandleAsync(requestHandlerAsync, "localhost", 8002)
+//  Http().bindAndHandleAsync(requestHandlerAsync, "localhost", 8002)
 
   /**
     * via a flow
@@ -119,10 +120,66 @@ object LowLevelAPI extends App {
 
   }
 
-  Http().bind("localhost", 8003).runForeach { incommingConnection =>
-    incommingConnection.handleWith(streamsBasedRequestHandler)
+//  Http().bind("localhost", 8003).runForeach { incommingConnection =>
+//    incommingConnection.handleWith(streamsBasedRequestHandler)
+//  }
+//
+//  Http().bindAndHandle(streamsBasedRequestHandler, "localhost", 8004)
+
+  /**
+    * Exercice, simple server with a home and a about page and a 404 for the rest
+    *
+    */
+
+  val home = HttpResponse(StatusCodes.OK,
+    entity = HttpEntity(
+      ContentTypes.`application/json`,
+      """
+        |{"status": "ok"}
+      """.stripMargin
+    ))
+  val about = HttpResponse(StatusCodes.OK,
+    entity = HttpEntity(
+      ContentTypes.`application/json`,
+      """
+        |{"about": "nothing much yet"}
+      """.stripMargin
+    ))
+
+  val notFound = HttpResponse(StatusCodes.NotFound,
+    entity = HttpEntity(
+      """
+        |this is messed up
+      """.stripMargin
+    ))
+
+  val requestHandlerx: Flow[HttpRequest, HttpResponse, _] = Flow[HttpRequest].map {
+
+    case HttpRequest(HttpMethods.GET, Uri.Path("/"), _, _, _) => home
+    case HttpRequest(HttpMethods.GET, Uri.Path("/about"), _, _, _) => about
+    case request: HttpRequest => notFound
   }
 
-  Http().bindAndHandle(streamsBasedRequestHandler, "localhost", 8004)
+  val newServer = Http().bindAndHandle(requestHandlerx,"localhost", 3844)
+
+
+  val sinkExerciceHandler:  HttpRequest => HttpResponse = {
+    case HttpRequest(HttpMethods.GET, Uri.Path("/"), _, _, _) => home
+    case HttpRequest(HttpMethods.GET, Uri.Path("/about"), _, _, _) => about
+    case request: HttpRequest => {
+      request.discardEntityBytes()
+      notFound
+    }
+  }
+
+  val asyncSuperHandler: HttpRequest => Future[HttpResponse] = {
+    case HttpRequest(HttpMethods.GET, Uri.Path("/"), _, _, _) => Future(home)
+    case HttpRequest(HttpMethods.GET, Uri.Path("/about"), _, _, _) => Future(about)
+    case request: HttpRequest => {
+      request.discardEntityBytes()
+      Future(notFound)
+    }
+  }
+
 
 }
