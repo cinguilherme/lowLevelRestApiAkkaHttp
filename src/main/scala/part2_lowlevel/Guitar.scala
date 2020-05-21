@@ -55,7 +55,6 @@ class GuitarDB extends Actor with ActorLogging {
       log.info(s"i got $id and $quantity")
       val old = guitars(id)
       val updatedEntry:Guitar = Guitar(old.make, old.model, quantity)
-      guitars = guitars - id
       guitars = guitars + (id -> updatedEntry)
 
       sender() ! InventoryUpdated

@@ -37,10 +37,16 @@ class GuitarActions extends GuitarStoreJsonProtocol  {
       Future(HttpResponse(StatusCodes.BadRequest))
     } else {
 
-      val id = query.get("id").map(_.toInt).get
-      val quantity = query.get("quantity").map(_.toInt).get
+      val idOpt:Option[Int] = query.get("id").map(_.toInt)
+      val quantityOpt:Option[Int] = query.get("quantity").map(_.toInt)
 
-      setStock(id, quantity)
+      val finalRes = for {
+        id <- idOpt
+        quantity <- quantityOpt
+      } yield {
+        setStock(id, quantity)
+      }
+      finalRes.getOrElse(Future(HttpResponse(StatusCodes.BadRequest)))
     }
   }
 
