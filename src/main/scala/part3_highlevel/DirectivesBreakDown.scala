@@ -74,5 +74,58 @@ object DirectivesBreakDown extends App {
       }
     }
 
-  Http().bindAndHandle(extractRequestRoute, "localhost", 8080)
+  /**
+    * Composite directives
+    */
+
+  val simpleNestRoute =
+    path("api" / "item") {
+      get {
+        complete(StatusCodes.OK)
+      }
+    }
+
+  val compacSimple = (path("api" / "v1") & get & extractLog) { (log) =>
+    log.info("well this is really cool")
+    complete(StatusCodes.OK)
+  }
+
+  val branchDryRoute = (path("about") | path("aboutUs")) {
+    complete(StatusCodes.OK)
+  }
+
+  val blogByIdRoute = path(IntNumber) { postId =>
+    //complex server logic
+    complete(StatusCodes.OK)
+  }
+  val blogByQuyeryParam = parameter('postId.as[Int]) { postId =>
+    complete(StatusCodes.OK)
+  }
+
+  val combinedBlogByIdRoute = (path(IntNumber) | parameter('postId.as[Int])) {
+    postId =>
+    complete(StatusCodes.OK)
+  }
+
+  /**
+    * type 4 - actionable
+    */
+
+  val completeOkRoute = complete(StatusCodes.OK)
+  val failedRoute = failWith(new RuntimeException) // completes with HTTP 500
+
+  // rejects and pass it on to the next rooute
+  val rejectRoute = path("home"){
+    reject
+  } ~
+  path("index" / "endpoint") {
+    get {
+      complete(StatusCodes.OK)
+    } ~
+    post {
+      complete(StatusCodes.Forbidden)
+    }
+  }
+
+  Http().bindAndHandle(rejectRoute, "localhost", 8080)
 }
