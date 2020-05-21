@@ -41,6 +41,7 @@ object LowLevelREST extends App with GuitarStoreJsonProtocol {
     case HttpRequest(HttpMethods.POST, Uri.Path("/api/guitar"), _, entity, _) => actions.createNewGuitar(entity)
 
     case HttpRequest(HttpMethods.GET, uri@Uri.Path("/api/guitar/inventory"), _, _, _) => actions.inventory(uri)
+    case HttpRequest(HttpMethods.POST, uri@Uri.Path("/api/guitar/inventory"), _, _, _) => actions.setInventory(uri)
 
     case request: HttpRequest => {
       request.discardEntityBytes()

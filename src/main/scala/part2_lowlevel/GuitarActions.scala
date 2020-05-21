@@ -2,7 +2,7 @@ package part2_lowlevel
 
 import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpResponse, StatusCodes, Uri}
 import akka.http.scaladsl.model.Uri.Query
-import part2_lowlevel.GuitarDB.{CreateGuitar, FindAllGuitars, FindGuitar, GetInventory}
+import part2_lowlevel.GuitarDB.{CreateGuitar, FindAllGuitars, FindGuitar, GetInventory, InventoryUpdated, SetInventory}
 import part2_lowlevel.LowLevelREST.{guitarDbActor, materializer, system}
 
 import scala.concurrent.Future
@@ -26,6 +26,27 @@ class GuitarActions extends GuitarStoreJsonProtocol  {
       val st = query.get("inStock").map(_.toBoolean).get
       println(st)
       getStock(st)
+    }
+  }
+
+  def setInventory(uri: Uri): Future[HttpResponse] = {
+
+    val query: Query = uri.query()
+
+    if(query.isEmpty){
+      Future(HttpResponse(StatusCodes.BadRequest))
+    } else {
+
+      val id = query.get("id").map(_.toInt).get
+      val quantity = query.get("quantity").map(_.toInt).get
+
+      setStock(id, quantity)
+    }
+  }
+
+  def setStock(id: Int, quantity: Int) = {
+    (guitarDbActor ? SetInventory(id, quantity)).map { va =>
+      HttpResponse(StatusCodes.OK)
     }
   }
 

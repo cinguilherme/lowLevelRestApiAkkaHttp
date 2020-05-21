@@ -12,6 +12,8 @@ object GuitarDB {
   case object FindAllGuitars
 
   case class GetInventory(stock: Boolean)
+  case class SetInventory(id: Int, quantity: Int)
+  case object InventoryUpdated
 }
 
 
@@ -48,6 +50,15 @@ class GuitarDB extends Actor with ActorLogging {
 
       val res = guitars.values.toList.filter(gt => pred(gt.stock))
       sender() ! res
+    }
+    case SetInventory(id, quantity) => {
+      log.info(s"i got $id and $quantity")
+      val old = guitars(id)
+      val updatedEntry:Guitar = Guitar(old.make, old.model, quantity)
+      guitars = guitars - id
+      guitars = guitars + (id -> updatedEntry)
+
+      sender() ! InventoryUpdated
     }
   }
 }
