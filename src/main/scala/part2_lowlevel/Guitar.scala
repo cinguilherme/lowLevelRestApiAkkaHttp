@@ -10,6 +10,8 @@ object GuitarDB {
   case class GuitarCreated(id: Int)
   case class FindGuitar(id: Int)
   case object FindAllGuitars
+
+  case class GetInventory(stock: Boolean)
 }
 
 
@@ -40,6 +42,12 @@ class GuitarDB extends Actor with ActorLogging {
       guitars = guitars + (currentGuitarId -> guitar)
       sender() ! GuitarCreated
       currentGuitarId += 1
+    }
+    case GetInventory(stock) => {
+      val pred:(Int => Boolean) = if(stock == false) ((z:Int) => z == 0) else ((x:Int) => x > 0)
+
+      val res = guitars.values.toList.filter(gt => pred(gt.stock))
+      sender() ! res
     }
   }
 }
