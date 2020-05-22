@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0456fb90-c2f0-46be-9070-a8df621ba12e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part3_highlevel/HighLevelExample.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/HighLevelExercice.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/Person.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/PersonActions.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,23 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part3_highlevel/HighLevelRest.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/HighLevelExercice.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding>
-                <element signature="e#25#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelREST.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="40" column="69" lean-forward="true" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+            <state relative-caret-position="236">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="e#24#62#0" expanded="true" />
               </folding>
@@ -51,23 +40,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part3_highlevel/DirectivesBreakDown.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/Person.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+            <state relative-caret-position="147">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="22" />
               <folding>
-                <element signature="e#25#54#0" expanded="true" />
-                <element signature="e#238#262#0" expanded="true" />
+                <element signature="e#26#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/PersonActions.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="e#24#65#0" expanded="true" />
+                <element signature="e#455#479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/part3_highlevel/HighLevelExample.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state relative-caret-position="197">
+              <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
               <folding>
                 <element signature="e#25#63#0" expanded="true" />
               </folding>
@@ -76,51 +77,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7-sources.jar!/akka/http/scaladsl/server/directives/ParameterDirectives.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="319">
+              <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
               <folding>
                 <element signature="e#24#114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/Guitar.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7-sources.jar!/akka/http/scaladsl/server/directives/RouteDirectives.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part1_recap/ScalaRecap.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-              <folding>
-                <element signature="e#21#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,6 +112,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/part3_highlevel/DirectivesBreakDown.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/part3_highlevel/HighLevelExample.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/Person.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/PersonActions.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/HighLevelExercice.scala" />
       </list>
     </option>
   </component>
@@ -212,14 +177,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="part1_recap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex-akka-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="part2_lowlevel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,6 +186,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="part3_highlevel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex-akka-http" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="part4_exercice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ex-akka-http" type="b2602c69:ProjectViewProjectNode" />
@@ -302,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HighLevelExample">
+  <component name="RunManager" selected="Application.HighLevelExercice">
     <configuration name="DirectivesBreakDown" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="part3_highlevel.DirectivesBreakDown" />
       <module name="ex-akka-http" />
@@ -329,12 +294,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HighLevelRest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part3_highlevel.HighLevelRest" />
+    <configuration name="HighLevelExercice" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part4_exercice.HighLevelExercice" />
       <module name="ex-akka-http" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="part3_highlevel.*" />
+          <option name="PATTERN" value="part4_exercice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -342,12 +307,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LowLevelAPI" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part2_lowlevel.LowLevelAPI" />
+    <configuration name="HighLevelRest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part3_highlevel.HighLevelRest" />
       <module name="ex-akka-http" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="part2_lowlevel.*" />
+          <option name="PATTERN" value="part3_highlevel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -370,11 +335,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HighLevelExercice" />
         <item itemvalue="Application.HighLevelExample" />
         <item itemvalue="Application.DirectivesBreakDown" />
         <item itemvalue="Application.HighLevelRest" />
         <item itemvalue="Application.LowLevelREST" />
-        <item itemvalue="Application.LowLevelAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -451,11 +416,11 @@
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Build" order="6" weight="0.26839378" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" weight="0.32948583" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2580311" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25595856" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.19896373" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.17098446" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.18031088" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.20207255" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.2507772" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -607,13 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/Guitar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/LowLevelREST.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -635,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7-sources.jar!/akka/http/scaladsl/server/directives/ParameterDirectives.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -652,12 +600,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/Guitar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part2_lowlevel/GuitarActions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding>
+            <element signature="e#24#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/Person.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#26#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/part3_highlevel/HighLevelExample.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        <state relative-caret-position="197">
+          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
           <folding>
             <element signature="e#25#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/PersonActions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+            <element signature="e#455#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/HighLevelExercice.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#24#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
