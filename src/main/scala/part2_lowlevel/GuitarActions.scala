@@ -2,8 +2,9 @@ package part2_lowlevel
 
 import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpResponse, StatusCodes, Uri}
 import akka.http.scaladsl.model.Uri.Query
-import part2_lowlevel.GuitarDB.{CreateGuitar, FindAllGuitars, FindGuitar, GetInventory, InventoryUpdated, SetInventory}
-import part2_lowlevel.LowLevelREST.{guitarDbActor, materializer, system}
+import part2_lowlevel.GuitarDB.{CreateGuitar, FindAllGuitars, FindGuitar, GetInventory, SetInventory}
+import part2_lowlevel.Guitar
+import part3_highlevel.HighLevelExample.{materializer, system, guitarDbActor}
 
 import scala.concurrent.Future
 import spray.json._
@@ -15,8 +16,13 @@ import scala.concurrent.duration._
 
 class GuitarActions extends GuitarStoreJsonProtocol  {
 
-  implicit val executionContext = system.dispatchers.lookup("my-dispatcher")
+  //implicit val executionContext = system.dispatchers.lookup("my-dispatcher")
+  import system.dispatcher
   implicit val timeout = Timeout(3 seconds)
+
+  def inventory(stock: Boolean): Future[HttpResponse] = {
+    getStock(stock)
+  }
 
   def inventory(uri: Uri): Future[HttpResponse] = {
     val query: Query = uri.query()
@@ -77,6 +83,16 @@ class GuitarActions extends GuitarStoreJsonProtocol  {
         }
     }
 
+  }
+
+  def guitarById(id: Int) = {
+    println("guitar by id evoked")
+    val gui: Future[Option[Guitar]] = (guitarDbActor ? FindGuitar(id)).mapTo[Option[Guitar]]
+    gui.map {
+      case None => HttpResponse(StatusCodes.NotFound)
+      case Some(guitar) => HttpResponse(StatusCodes.OK,
+        entity = HttpEntity(ContentTypes.`application/json`, guitar.toJson.prettyPrint))
+    }
   }
 
   def createNewGuitar(entity: HttpEntity): Future[HttpResponse] = {
