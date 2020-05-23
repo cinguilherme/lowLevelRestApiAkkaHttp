@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0456fb90-c2f0-46be-9070-a8df621ba12e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/JwtAuthorization.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/UploadingFiles.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ex-akka-http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ex-akka-http.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/ConnectionLevel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/HostLevel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/PaymentSystem.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_exercice/RequestLevel.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,13 +45,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/JwtAuthorization.scala">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/PaymentSystem.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+            <state relative-caret-position="176">
+              <caret line="40" column="49" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="40" selection-end-column="49" />
               <folding>
-                <element signature="e#24#60#0" expanded="true" />
+                <element signature="e#24#83#0" expanded="true" />
+                <element signature="e#1380#1404#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/ConnectionLevel.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
+                <element signature="e#235#259#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/HostLevel.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/RequestLevel.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="e#24#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,6 +125,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/UploadingFiles.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/JwtAuthorization.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/PaymentSystem.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/ConnectionLevel.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/part4_exercice/RequestLevel.scala" />
       </list>
     </option>
   </component>
@@ -214,9 +252,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JwtAuthorization">
+  <component name="RunManager" selected="Application.ConnectionLevel">
+    <configuration name="ConnectionLevel" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part4_exercice.ConnectionLevel" />
+      <module name="ex-akka-http" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part4_exercice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JwtAuthorization" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="part4_exercice.JwtAuthorization" />
+      <module name="ex-akka-http" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part4_exercice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentSystem" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part4_exercice.PaymentSystem" />
       <module name="ex-akka-http" />
       <extension name="coverage">
         <pattern>
@@ -254,50 +318,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteDSLSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="ex-akka-http" />
-      <setting name="path" value="part4_exercice.RouteDSLSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <setting name="jrePath" value="" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="part4_exercice.RouteDSLSpec" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RouteDSLSpec.a digital library backend should should accept the query notation" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="ex-akka-http" />
-      <setting name="path" value="part4_exercice.RouteDSLSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <setting name="jrePath" value="" />
-      <envs />
-      <setting name="testKind" value="Test name" />
-      <setting name="path" value="part4_exercice.RouteDSLSpec" />
-      <setting name="testName" value="a digital library backend should should accept the query notation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConnectionLevel" />
+        <item itemvalue="Application.PaymentSystem" />
         <item itemvalue="Application.JwtAuthorization" />
         <item itemvalue="Application.UploadingFiles" />
         <item itemvalue="Application.WebSocketDemo" />
-        <item itemvalue="ScalaTest.RouteDSLSpec" />
-        <item itemvalue="ScalaTest.RouteDSLSpec.a digital library backend should should accept the query notation" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +417,7 @@
     <frame x="120" y="23" width="1800" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1452164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1668565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -410,13 +437,13 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.19896373" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.31295338" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" visible="true" weight="0.22487047" />
+      <window_info anchor="bottom" id="Run" order="12" visible="true" weight="0.23212436" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="sbt" order="5" visible="true" weight="0.19191344" />
+      <window_info anchor="right" id="sbt" order="5" visible="true" weight="0.14635535" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Leiningen" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -712,10 +739,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/JwtAuthorization.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="544">
           <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
           <folding>
             <element signature="e#24#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/ConnectionLevel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
+            <element signature="e#235#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/HostLevel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/PaymentSystem.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="40" column="49" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="40" selection-end-column="49" />
+          <folding>
+            <element signature="e#24#83#0" expanded="true" />
+            <element signature="e#1380#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/part4_exercice/RequestLevel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
