@@ -20,7 +20,7 @@ object HighLevelExercice extends App {
 
   import akka.http.scaladsl.server.Directives._
 
-  val personRoutes = pathPrefix("api" / "people") {
+  val personRoutes = (pathPrefix("api" / "people") | pathPrefix("api" / "people" / "v1")) {
     (parameter('pin.as[Int]) | path(IntNumber)) { pin =>
       get {
         complete(personActions.getPersonByPin(pin))
